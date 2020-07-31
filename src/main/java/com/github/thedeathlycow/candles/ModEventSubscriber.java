@@ -1,21 +1,10 @@
-package com.github.thedeathlycow;
+package com.github.thedeathlycow.candles;
 
+import com.github.thedeathlycow.candles.init.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.item.Item;
-import net.minecraft.world.biome.Biomes;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import net.minecraft.world.gen.placement.ChanceRangeConfig;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.minecraftforge.fml.loading.FMLEnvironment;
 
 @Mod.EventBusSubscriber(modid = Main.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventSubscriber {
@@ -25,10 +14,10 @@ public class ModEventSubscriber {
 //        event.getRegistry().registerAll(ModItems.ITEMS);
 //    }
 //
-//    @SubscribeEvent
-//    public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
-//        event.getRegistry().registerAll(ModBlocks.BLOCKS);
-//    }
+    @SubscribeEvent
+    public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(ModBlocks.BLOCKS);
+    }
 
 //    @SubscribeEvent
 //    public static void FMLClientSetupEvent(final FMLClientSetupEvent event) {

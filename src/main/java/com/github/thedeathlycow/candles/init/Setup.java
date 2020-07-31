@@ -1,6 +1,6 @@
-package com.github.thedeathlycow.init;
+package com.github.thedeathlycow.candles.init;
 
-import com.github.thedeathlycow.Main;
+import com.github.thedeathlycow.candles.Main;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
