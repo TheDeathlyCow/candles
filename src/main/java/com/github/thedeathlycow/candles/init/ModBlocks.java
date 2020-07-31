@@ -1,6 +1,7 @@
 package com.github.thedeathlycow.candles.init;
 
-import com.github.thedeathlycow.candles.Main;
+import com.github.thedeathlycow.candles.blocks.BeeswaxCandle;
+import com.github.thedeathlycow.candles.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ObjectHolder;

@@ -1,4 +1,4 @@
-package com.github.thedeathlycow.blocks;
+package com.github.thedeathlycow.candles.blocks;
 
 import net.minecraft.block.Block;
 

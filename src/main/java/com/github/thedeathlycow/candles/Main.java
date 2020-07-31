@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(Main.MODID)
 public class Main {
 
-    public static final String MODID = "better-food";
+    public static final String MODID = "candles";
 
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
@@ -17,7 +17,7 @@ public class Main {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        LOGGER.debug("HELLO from BETTER FOOD");
+        LOGGER.debug("HELLO from CANDLES");
     }
 
     private void setup(final FMLCommonSetupEvent event) {
