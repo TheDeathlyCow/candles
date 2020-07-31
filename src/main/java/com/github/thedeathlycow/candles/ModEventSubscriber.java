@@ -1,7 +1,9 @@
 package com.github.thedeathlycow.candles;
 
 import com.github.thedeathlycow.candles.init.ModBlocks;
+import com.github.thedeathlycow.candles.init.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -9,11 +11,11 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = Main.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventSubscriber {
 
-//    @SubscribeEvent
-//    public static void onRegisterItems(RegistryEvent.Register<Item> event) {
-//        event.getRegistry().registerAll(ModItems.ITEMS);
-//    }
-//
+    @SubscribeEvent
+    public static void onRegisterItems(RegistryEvent.Register<Item> event) {
+        event.getRegistry().registerAll(ModItems.ITEMS);
+    }
+
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS);
