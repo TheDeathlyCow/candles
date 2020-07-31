@@ -38,7 +38,7 @@ public class ExampleMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        // this is to test git is working 
+        // this is to test git is working
     }
 
     private void setup(final FMLCommonSetupEvent event)
