@@ -3,10 +3,15 @@ package com.github.thedeathlycow.candles;
 import com.github.thedeathlycow.candles.init.ModBlocks;
 import com.github.thedeathlycow.candles.init.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.Item;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 
 @Mod.EventBusSubscriber(modid = Main.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventSubscriber {
@@ -21,16 +26,13 @@ public class ModEventSubscriber {
         event.getRegistry().registerAll(ModBlocks.BLOCKS);
     }
 
-//    @SubscribeEvent
-//    public static void FMLClientSetupEvent(final FMLClientSetupEvent event) {
-//        if (FMLEnvironment.dist == Dist.CLIENT) {
-//            RenderTypeLookup.setRenderLayer(ModBlocks.RICE_PLANT, RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.RICE_PLANT_TOP, RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.WILD_RICE_BASE, RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.WILD_RICE_TOP, RenderType.getCutout());
-//        }
-//    }
-//
+    @SubscribeEvent
+    public static void FMLClientSetupEvent(final FMLClientSetupEvent event) {
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            RenderTypeLookup.setRenderLayer(ModBlocks.BEESWAX_CANDLE, RenderType.getCutout());
+        }
+    }
+
 //    @SubscribeEvent
 //    public static void FMLLoadCompleteEvent(FMLLoadCompleteEvent event) {
 //        Biomes.SWAMP.addFeature(

@@ -2,52 +2,18 @@
   "variants": {
     "candles=1": [
       {
-        "model": "minecraft:block/dead_sea_pickle"
+        "model": "candles:block/beeswax_candle/candle"
       },
       {
-        "model": "minecraft:block/dead_sea_pickle",
+        "model": "candles:block/beeswax_candle/candle",
         "y": 90
       },
       {
-        "model": "minecraft:block/dead_sea_pickle",
+        "model": "candles:block/beeswax_candle/candle",
         "y": 180
       },
       {
-        "model": "minecraft:block/dead_sea_pickle",
-        "y": 270
-      }
-    ],
-    "candles=1": [
-      {
-        "model": "minecraft:block/sea_pickle"
-      },
-      {
-        "model": "minecraft:block/sea_pickle",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/sea_pickle",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/sea_pickle",
-        "y": 270
-      }
-    ],
-    "candles=2": [
-      {
-        "model": "minecraft:block/two_dead_sea_pickles"
-      },
-      {
-        "model": "minecraft:block/two_dead_sea_pickles",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/two_dead_sea_pickles",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/two_dead_sea_pickles",
+        "model": "candles:block/beeswax_candle/candle",
         "y": 270
       }
     ],
@@ -70,23 +36,6 @@
     ],
     "candles=3": [
       {
-        "model": "minecraft:block/three_dead_sea_pickles"
-      },
-      {
-        "model": "minecraft:block/three_dead_sea_pickles",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/three_dead_sea_pickles",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/three_dead_sea_pickles",
-        "y": 270
-      }
-    ],
-    "candles=3": [
-      {
         "model": "minecraft:block/three_sea_pickles"
       },
       {
@@ -99,23 +48,6 @@
       },
       {
         "model": "minecraft:block/three_sea_pickles",
-        "y": 270
-      }
-    ],
-    "candles=4": [
-      {
-        "model": "minecraft:block/four_dead_sea_pickles"
-      },
-      {
-        "model": "minecraft:block/four_dead_sea_pickles",
-        "y": 90
-      },
-      {
-        "model": "minecraft:block/four_dead_sea_pickles",
-        "y": 180
-      },
-      {
-        "model": "minecraft:block/four_dead_sea_pickles",
         "y": 270
       }
     ],
