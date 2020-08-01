@@ -9,7 +9,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(Main.MODID)
 public class ModBlocks {
 
-    public static final Block BEESWAX_CANDLE = Setup.setup(new BeeswaxCandle(Block.Properties.create(Material.FIRE)), "beeswax_candle");
+    public static final Block BEESWAX_CANDLE = Setup.setup(new BeeswaxCandle(Block.Properties.create(Material.SEA_GRASS)), "beeswax_candle");
 
     public static final Block[] BLOCKS = {
             BEESWAX_CANDLE
