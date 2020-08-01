@@ -26,7 +26,7 @@ import javax.annotation.Nullable;
 import java.util.Locale;
 import java.util.Random;
 
-public class BeeswaxCandle extends BushBlock {
+public class BeeswaxCandle extends Block {
 
     public static final IntegerProperty CANDLES = IntegerProperty.create("candles", 1, 4);
     protected static final VoxelShape ONE_SHAPE = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 6.0D, 10.0D);
@@ -149,8 +149,6 @@ public class BeeswaxCandle extends BushBlock {
         return useContext.getItem().getItem() == this.asItem() && state.get(CANDLES) < 4;
     }
 
-    public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
-        return false;
-    }
+
 
 }
