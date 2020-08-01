@@ -3,69 +3,21 @@
     "candles=1": [
       {
         "model": "candles:block/beeswax_candle/candle"
-      },
-      {
-        "model": "candles:block/beeswax_candle/candle",
-        "y": 90
-      },
-      {
-        "model": "candles:block/beeswax_candle/candle",
-        "y": 180
-      },
-      {
-        "model": "candles:block/beeswax_candle/candle",
-        "y": 270
       }
     ],
     "candles=2": [
       {
         "model": "candles:block/beeswax_candle/two_candles"
-      },
-      {
-        "model": "candles:block/beeswax_candle/two_candles",
-        "y": 90
-      },
-      {
-        "model": "candles:block/beeswax_candle/two_candles",
-        "y": 180
-      },
-      {
-        "model": "candles:block/beeswax_candle/two_candles",
-        "y": 270
       }
     ],
     "candles=3": [
       {
         "model": "candles:block/beeswax_candle/three_candles"
-      },
-      {
-        "model": "candles:block/beeswax_candle/three_candles",
-        "y": 90
-      },
-      {
-        "model": "candles:block/beeswax_candle/three_candles",
-        "y": 180
-      },
-      {
-        "model": "candles:block/beeswax_candle/three_candles",
-        "y": 270
       }
     ],
     "candles=4": [
       {
         "model": "candles:block/beeswax_candle/four_candles"
-      },
-      {
-        "model": "candles:block/beeswax_candle/four_candles",
-        "y": 90
-      },
-      {
-        "model": "candles:block/beeswax_candle/four_candles",
-        "y": 180
-      },
-      {
-        "model": "candles:block/beeswax_candle/four_candles",
-        "y": 270
       }
     ]
   }
