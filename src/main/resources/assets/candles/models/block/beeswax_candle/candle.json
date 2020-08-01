@@ -1,6 +1,7 @@
 {
     "parent": "block/block",
     "textures": {
+        "particle": "candles:block/beeswax_candle",
         "all": "candles:block/beeswax_candle"
     },
     "elements": [

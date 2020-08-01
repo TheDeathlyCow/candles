@@ -57,13 +57,13 @@ public class BeeswaxCandle extends BushBlock {
      * returns its solidified counterpart.
      * Note that this method should ideally consider only the specific face passed in.
      */
-    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-        if (!stateIn.isValidPosition(worldIn, currentPos)) {
-            return Blocks.AIR.getDefaultState();
-        } else {
-            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
-        }
-    }
+//    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+//        if (!stateIn.isValidPosition(worldIn, currentPos)) {
+//            return Blocks.AIR.getDefaultState();
+//        } else {
+//            return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+//        }
+//    }
 
     /**
      * Called periodically clientside on blocks near the player to show effects (like furnace fire particles). Note that
@@ -95,23 +95,20 @@ public class BeeswaxCandle extends BushBlock {
 
     private void twoFlames(World worldIn, BlockPos pos) {
         this.addParticles(worldIn, (double)pos.getX() + 0.7D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.7D);
-        this.addParticles(worldIn, (double)pos.getX() + 0.4D, (double)pos.getY() + 0.3D, (double)pos.getZ() + 0.4D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.4D, (double)pos.getY() + 0.4D, (double)pos.getZ() + 0.4D);
     }
 
     private void threeFlames(World worldIn, BlockPos pos) {
-        double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 0.5D;
-        double d2 = (double)pos.getZ() + 0.5D;
-        worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(this.particleData, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.75D, (double)pos.getY() + 0.4D, (double)pos.getZ() + 0.25D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.65D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.6D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.3D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.55D);
     }
 
     private void fourFlames(World worldIn, BlockPos pos) {
-        double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 0.5D;
-        double d2 = (double)pos.getZ() + 0.5D;
-        worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(this.particleData, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.75D, (double)pos.getY() + 0.4D, (double)pos.getZ() + 0.3D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.6D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.75D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.25D, (double)pos.getY() + 0.45D, (double)pos.getZ() + 0.75D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.25D, (double)pos.getY() + 0.45D, (double)pos.getZ() + 0.3D);
     }
 
     private void addParticles(World worldIn, double x, double y, double z) {

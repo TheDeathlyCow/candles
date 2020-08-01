@@ -19,52 +19,52 @@
     ],
     "candles=2": [
       {
-        "model": "minecraft:block/two_sea_pickles"
+        "model": "candles:block/beeswax_candle/two_candles"
       },
       {
-        "model": "minecraft:block/two_sea_pickles",
+        "model": "candles:block/beeswax_candle/two_candles",
         "y": 90
       },
       {
-        "model": "minecraft:block/two_sea_pickles",
+        "model": "candles:block/beeswax_candle/two_candles",
         "y": 180
       },
       {
-        "model": "minecraft:block/two_sea_pickles",
+        "model": "candles:block/beeswax_candle/two_candles",
         "y": 270
       }
     ],
     "candles=3": [
       {
-        "model": "minecraft:block/three_sea_pickles"
+        "model": "candles:block/beeswax_candle/three_candles"
       },
       {
-        "model": "minecraft:block/three_sea_pickles",
+        "model": "candles:block/beeswax_candle/three_candles",
         "y": 90
       },
       {
-        "model": "minecraft:block/three_sea_pickles",
+        "model": "candles:block/beeswax_candle/three_candles",
         "y": 180
       },
       {
-        "model": "minecraft:block/three_sea_pickles",
+        "model": "candles:block/beeswax_candle/three_candles",
         "y": 270
       }
     ],
     "candles=4": [
       {
-        "model": "minecraft:block/four_sea_pickles"
+        "model": "candles:block/beeswax_candle/four_candles"
       },
       {
-        "model": "minecraft:block/four_sea_pickles",
+        "model": "candles:block/beeswax_candle/four_candles",
         "y": 90
       },
       {
-        "model": "minecraft:block/four_sea_pickles",
+        "model": "candles:block/beeswax_candle/four_candles",
         "y": 180
       },
       {
-        "model": "minecraft:block/four_sea_pickles",
+        "model": "candles:block/beeswax_candle/four_candles",
         "y": 270
       }
     ]
