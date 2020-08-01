@@ -1,16 +1,13 @@
 package com.github.thedeathlycow.candles.blocks;
 
-import net.minecraft.block.*;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.fluid.Fluids;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.pathfinding.PathType;
-import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -23,10 +20,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
-import java.util.Locale;
 import java.util.Random;
 
-public class BeeswaxCandle extends Block {
+public class CandleBlock extends Block {
 
     public static final IntegerProperty CANDLES = IntegerProperty.create("candles", 1, 4);
     protected static final VoxelShape ONE_SHAPE = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 6.0D, 10.0D);
@@ -36,7 +32,7 @@ public class BeeswaxCandle extends Block {
 
     protected final IParticleData particleData;
 
-    public BeeswaxCandle(Properties blockProperties, IParticleData particleData) {
+    public CandleBlock(Properties blockProperties, IParticleData particleData) {
         super(blockProperties);
         this.setDefaultState(this.stateContainer.getBaseState().with(CANDLES, Integer.valueOf(1)));
         this.particleData = particleData;
@@ -148,6 +144,7 @@ public class BeeswaxCandle extends Block {
     public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
         return useContext.getItem().getItem() == this.asItem() && state.get(CANDLES) < 4;
     }
+
 
 
 
