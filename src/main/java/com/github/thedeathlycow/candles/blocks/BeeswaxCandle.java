@@ -41,7 +41,7 @@ public class BeeswaxCandle extends BushBlock {
         if (blockstate.isIn(this)) {
             return blockstate.with(CANDLES, Integer.valueOf(Math.min(4, blockstate.get(CANDLES) + 1)));
         } else {
-            return blockstate.with(CANDLES, Integer.valueOf(1));
+            return this.getDefaultState();
         }
     }
 
@@ -88,7 +88,7 @@ public class BeeswaxCandle extends BushBlock {
     }
 
     public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-        return useContext.getItem().getItem() == this.asItem() && state.get(CANDLES) < 4 ? true : super.isReplaceable(state, useContext);
+        return useContext.getItem().getItem() == this.asItem() && state.get(CANDLES) < 4;
     }
 
     public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
