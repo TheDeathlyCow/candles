@@ -72,11 +72,51 @@ public class BeeswaxCandle extends BushBlock {
      */
     @OnlyIn(Dist.CLIENT)
     public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        switch(stateIn.get(CANDLES)) {
+            case 1:
+            default:
+                this.oneFlame(worldIn, pos);
+                break;
+            case 2:
+                this.twoFlames(worldIn, pos);
+                break;
+            case 3:
+                this.threeFlames(worldIn, pos);
+                break;
+            case 4:
+                this.fourFlames(worldIn, pos);
+                break;
+        }
+    }
+
+    private void oneFlame(World worldIn, BlockPos pos) {
+        this.addParticles(worldIn, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D);
+    }
+
+    private void twoFlames(World worldIn, BlockPos pos) {
+        this.addParticles(worldIn, (double)pos.getX() + 0.7D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.7D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.4D, (double)pos.getY() + 0.3D, (double)pos.getZ() + 0.4D);
+    }
+
+    private void threeFlames(World worldIn, BlockPos pos) {
         double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 0.6D;
+        double d1 = (double)pos.getY() + 0.5D;
         double d2 = (double)pos.getZ() + 0.5D;
         worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
         worldIn.addParticle(this.particleData, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+    }
+
+    private void fourFlames(World worldIn, BlockPos pos) {
+        double d0 = (double)pos.getX() + 0.5D;
+        double d1 = (double)pos.getY() + 0.5D;
+        double d2 = (double)pos.getZ() + 0.5D;
+        worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+        worldIn.addParticle(this.particleData, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+    }
+
+    private void addParticles(World worldIn, double x, double y, double z) {
+        worldIn.addParticle(ParticleTypes.SMOKE, x, y, z, 0.0D, 0.0D, 0.0D);
+        worldIn.addParticle(this.particleData, x, y, z, 0.0D, 0.0D, 0.0D);
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
