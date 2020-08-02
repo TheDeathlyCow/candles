@@ -1,15 +1,25 @@
 package com.github.thedeathlycow.candles.blocks;
 
+import com.github.thedeathlycow.candles.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.potion.PotionUtils;
+import net.minecraft.potion.Potions;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
+import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
@@ -60,6 +70,29 @@ public class CandleBlock extends Block {
         } else {
             return this.getDefaultState().with(CANDLES, Integer.valueOf(stateIn.get(CANDLES)));
         }
+    }
+
+    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        ItemStack heldItem = player.getHeldItem(handIn);
+        if (heldItem.getItem() == Items.POTION && PotionUtils.getPotionFromItem(heldItem) == Potions.WATER) {
+
+            spawnAsEntity(worldIn, pos, new ItemStack(ModItems.BEESWAX_CANDLE, 1));
+
+            int numCandles = state.get(CANDLES);
+            if (numCandles > 1)
+                worldIn.setBlockState(pos, this.getDefaultState().with(CANDLES, Integer.valueOf(numCandles - 1)));
+            else
+                worldIn.setBlockState(pos, Blocks.AIR.getDefaultState());
+
+            if (!player.abilities.isCreativeMode) {
+                player.setHeldItem(handIn, new ItemStack(Items.GLASS_BOTTLE));
+                if (player instanceof ServerPlayerEntity)
+                    ((ServerPlayerEntity) player).sendContainerToPlayer(player.container);
+            }
+
+            return ActionResultType.SUCCESS;
+        }
+        return ActionResultType.PASS;
     }
 
     /**
