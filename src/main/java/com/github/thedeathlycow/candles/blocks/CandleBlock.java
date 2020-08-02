@@ -89,7 +89,6 @@ public class CandleBlock extends Block {
                 if (player instanceof ServerPlayerEntity)
                     ((ServerPlayerEntity) player).sendContainerToPlayer(player.container);
             }
-
             return ActionResultType.SUCCESS;
         }
         return ActionResultType.PASS;

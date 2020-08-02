@@ -17,7 +17,7 @@ public class ModBlocks {
 
     public static final Block BEESWAX_CANDLE = Setup.setup(new CandleBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.ADOBE).func_235838_a_((property) -> {
         return 3 + 3 * property.get(CandleBlock.CANDLES);
-    }).zeroHardnessAndResistance().sound(SoundType.CORAL), ParticleTypes.FLAME), "beeswax_candle");
+    }).zeroHardnessAndResistance().sound(SoundType.field_235602_z_), ParticleTypes.FLAME), "beeswax_candle");
 
     public static final Block[] BLOCKS = {
             BEESWAX_CANDLE
