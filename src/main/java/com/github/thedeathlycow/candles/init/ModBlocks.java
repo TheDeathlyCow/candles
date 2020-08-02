@@ -30,7 +30,7 @@ public class ModBlocks {
     public static final Block ORANGE_CANDLE = Setup.setup(new CandleBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.ADOBE).func_235838_a_((property) -> {
         return 3 + 3 * property.get(CandleBlock.CANDLES);
     }).zeroHardnessAndResistance().sound(SoundType.field_235602_z_),  ParticleTypes.FLAME), "orange_candle");
-    public static final Block MAGNETA_CANDLE = Setup.setup(new CandleBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.ADOBE).func_235838_a_((property) -> {
+    public static final Block MAGENTA_CANDLE = Setup.setup(new CandleBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.ADOBE).func_235838_a_((property) -> {
         return 3 + 3 * property.get(CandleBlock.CANDLES);
     }).zeroHardnessAndResistance().sound(SoundType.field_235602_z_),  ParticleTypes.FLAME), "magenta_candle");
     public static final Block LIGHT_BLUE_CANDLE = Setup.setup(new CandleBlock(Block.Properties.create(Material.MISCELLANEOUS, MaterialColor.ADOBE).func_235838_a_((property) -> {
@@ -77,7 +77,7 @@ public class ModBlocks {
             BEESWAX_CANDLE,
             WHITE_CANDLE,
             ORANGE_CANDLE,
-            MAGNETA_CANDLE,
+            MAGENTA_CANDLE,
             LIGHT_BLUE_CANDLE,
             YELLOW_CANDLE,
             LIME_CANDLE,

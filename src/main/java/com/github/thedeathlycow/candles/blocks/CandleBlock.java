@@ -4,9 +4,11 @@ import com.github.thedeathlycow.candles.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.item.ItemFrameEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemFrameItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particles.IParticleData;
@@ -76,7 +78,7 @@ public class CandleBlock extends Block {
         ItemStack heldItem = player.getHeldItem(handIn);
         if (heldItem.getItem() == Items.POTION && PotionUtils.getPotionFromItem(heldItem) == Potions.WATER) {
 
-            spawnAsEntity(worldIn, pos, new ItemStack(ModItems.BEESWAX_CANDLE, 1));
+            spawnAsEntity(worldIn, pos, new ItemStack(this.asItem(), 1));
 
             int numCandles = state.get(CANDLES);
             if (numCandles > 1)

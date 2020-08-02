@@ -1,5 +1,6 @@
 package com.github.thedeathlycow.candles;
 
+import com.github.thedeathlycow.candles.blocks.CandleBlock;
 import com.github.thedeathlycow.candles.init.ModBlocks;
 import com.github.thedeathlycow.candles.init.ModItems;
 import net.minecraft.block.Block;
@@ -24,13 +25,19 @@ public class ModEventSubscriber {
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS);
-    }   
+    }
 
     @SubscribeEvent
     public static void FMLClientSetupEvent(final FMLClientSetupEvent event) {
         if (FMLEnvironment.dist == Dist.CLIENT) {
-            RenderTypeLookup.setRenderLayer(ModBlocks.BEESWAX_CANDLE, RenderType.getCutout());
-            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_CANDLE, RenderType.getCutout());
+            for(Block block : ModBlocks.BLOCKS) {
+                if (block instanceof CandleBlock) {
+                    RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+                }
+            }
+//            RenderTypeLookup.setRenderLayer(ModBlocks.BEESWAX_CANDLE, RenderType.getCutout());
+//            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_CANDLE, RenderType.getCutout());
+//            RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_CANDLE, RenderType.getCutout());
         }
     }
 
