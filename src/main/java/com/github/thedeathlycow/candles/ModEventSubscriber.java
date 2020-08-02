@@ -24,12 +24,13 @@ public class ModEventSubscriber {
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS);
-    }
+    }   
 
     @SubscribeEvent
     public static void FMLClientSetupEvent(final FMLClientSetupEvent event) {
         if (FMLEnvironment.dist == Dist.CLIENT) {
             RenderTypeLookup.setRenderLayer(ModBlocks.BEESWAX_CANDLE, RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_CANDLE, RenderType.getCutout());
         }
     }
 

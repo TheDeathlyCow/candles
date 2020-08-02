@@ -12,9 +12,13 @@ public class ModItems {
     public static final Item BEESWAX_CANDLE = new BlockNamedItem(ModBlocks.BEESWAX_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.BEESWAX_CANDLE.getRegistryName());
     public static final Item BEESWAX = Setup.setup(new Item(new Item.Properties().group(ItemGroup.MISC)), "beeswax");
 
+    public static final Item WHITE_CANDLE = new BlockNamedItem(ModBlocks.WHITE_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.WHITE_CANDLE.getRegistryName());
+
+
     public static final Item[] ITEMS = {
             BEESWAX_CANDLE,
-            BEESWAX
+            BEESWAX,
+            WHITE_CANDLE
     };
 
 }

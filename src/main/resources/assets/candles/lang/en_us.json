@@ -1,5 +1,7 @@
 {
   "block.candles.beeswax_candle": "Beeswax Candle",
   "item.candles.beeswax_candle": "Beeswax Candle",
-  "item.candles.beeswax": "Beeswax"
+  "item.candles.beeswax": "Beeswax",
+  "block.candles.white_candle": "White Candle",
+  "item.candles.white_candle": "White Candle"
 }

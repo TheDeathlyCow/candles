@@ -123,8 +123,8 @@ public class CandleBlock extends Block {
     }
 
     private void twoFlames(World worldIn, BlockPos pos) {
-        this.addParticles(worldIn, (double)pos.getX() + 0.65D, (double)pos.getY() + 0.4D, (double)pos.getZ() + 0.7D);
-        this.addParticles(worldIn, (double)pos.getX() + 0.35D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.4D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.65D, (double)pos.getY() + 0.4D, (double)pos.getZ() + 0.65D);
+        this.addParticles(worldIn, (double)pos.getX() + 0.35D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.35D);
     }
 
     private void threeFlames(World worldIn, BlockPos pos) {
