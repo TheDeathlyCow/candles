@@ -35,9 +35,6 @@ public class ModEventSubscriber {
                     RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
                 }
             }
-//            RenderTypeLookup.setRenderLayer(ModBlocks.BEESWAX_CANDLE, RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_CANDLE, RenderType.getCutout());
-//            RenderTypeLookup.setRenderLayer(ModBlocks.ORANGE_CANDLE, RenderType.getCutout());
         }
     }
 

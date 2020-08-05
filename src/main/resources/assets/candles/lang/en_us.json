@@ -7,5 +7,7 @@
   "block.candles.orange_candle": "Orange Candle",
   "item.candles.orange_candle": "Orange Candle",
   "block.candles.magenta_candle": "Magenta Candle",
-  "item.candles.magenta_candle": "Magenta Candle"
+  "item.candles.magenta_candle": "Magenta Candle",
+  "block.candles.light_blue_candle": "Light Blue Candle",
+  "item.candles.light_blue_candle": "Light Blue Candle"
 }
