@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "candles=1": [
+      {
+        "model": "candles:block/yellow_candle/candle"
+      }
+    ],
+    "candles=2": [
+      {
+        "model": "candles:block/yellow_candle/two_candles"
+      }
+    ],
+    "candles=3": [
+      {
+        "model": "candles:block/yellow_candle/three_candles"
+      }
+    ],
+    "candles=4": [
+      {
+        "model": "candles:block/yellow_candle/four_candles"
+      }
+    ]
+  }
+}
