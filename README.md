@@ -17,5 +17,5 @@ lol use windows
 
 ## Links
 
--I'll probably have a mod page on CurseForge in the future and I'll link it here when I do.
--My twitter is https://twitter.com/TheDeathlyCow if you want to stalk me on there.
+- I'll probably have a mod page on CurseForge in the future and I'll link it here when I do.
+- My twitter is https://twitter.com/TheDeathlyCow if you want to stalk me on there.
