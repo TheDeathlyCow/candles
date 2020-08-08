@@ -74,6 +74,7 @@ public class CandleBlock extends Block {
         }
     }
 
+    @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         ItemStack heldItem = player.getHeldItem(handIn);
         if (heldItem.getItem() == Items.POTION && PotionUtils.getPotionFromItem(heldItem) == Potions.WATER) {
