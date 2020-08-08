@@ -11,5 +11,9 @@
   "block.candles.light_blue_candle": "Light Blue Candle",
   "item.candles.light_blue_candle": "Light Blue Candle",
   "block.candles.yellow_candle": "Yellow Candle",
-  "item.candles.yellow_candle": "Yellow Candle"
+  "item.candles.yellow_candle": "Yellow Candle",
+  "block.candles.lime_candle": "Lime Candle",
+  "item.candles.lime_candle": "Lime Candle",
+  "block.candles.pink_candle": "Pink Candle",
+  "item.candles.pink_candle": "Pink Candle"
 }

@@ -17,6 +17,8 @@ public class ModItems {
     public static final Item MAGENTA_CANDLE = new BlockNamedItem(ModBlocks.MAGENTA_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.MAGENTA_CANDLE.getRegistryName());
     public static final Item LIGHT_BLUE_CANDLE = new BlockNamedItem(ModBlocks.LIGHT_BLUE_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.LIGHT_BLUE_CANDLE.getRegistryName());
     public static final Item YELLOW_CANDLE = new BlockNamedItem(ModBlocks.YELLOW_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.YELLOW_CANDLE.getRegistryName());
+    public static final Item LIME_CANDLE = new BlockNamedItem(ModBlocks.LIME_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.LIME_CANDLE.getRegistryName());
+    public static final Item PINK_CANDLE = new BlockNamedItem(ModBlocks.PINK_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.PINK_CANDLE.getRegistryName());
 
 
     public static final Item[] ITEMS = {
@@ -26,7 +28,9 @@ public class ModItems {
             ORANGE_CANDLE,
             MAGENTA_CANDLE,
             LIGHT_BLUE_CANDLE,
-            YELLOW_CANDLE
+            YELLOW_CANDLE,
+            LIME_CANDLE,
+            PINK_CANDLE
     };
 
 
