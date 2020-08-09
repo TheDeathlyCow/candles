@@ -17,5 +17,5 @@ lol use windows
 
 ## Links
 
-- I'll probably have a mod page on CurseForge in the future and I'll link it here when I do.
+- CurseForge modpage: https://www.curseforge.com/minecraft/mc-mods/thedeathlycows-candles-mod.
 - My twitter is https://twitter.com/TheDeathlyCow if you want to stalk me on there.
