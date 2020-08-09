@@ -27,5 +27,11 @@
   "block.candles.blue_candle": "Blue Candle",
   "item.candles.blue_candle": "Blue Candle",
   "block.candles.brown_candle": "Brown Candle",
-  "item.candles.brown_candle": "Brown Candle"
+  "item.candles.brown_candle": "Brown Candle",
+  "block.candles.green_candle": "Green Candle",
+  "item.candles.green_candle": "Green Candle",
+  "block.candles.red_candle": "Red Candle",
+  "item.candles.red_candle": "Red Candle",
+  "block.candles.black_candle": "Black Candle",
+  "item.candles.black_candle": "Black Candle"
 }

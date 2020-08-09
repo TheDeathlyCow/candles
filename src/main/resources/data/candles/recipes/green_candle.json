@@ -1,0 +1,21 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CDC",
+    "CCC"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:green_dye"
+    },
+    "C": {
+      "item": "candles:beeswax_candle"
+    }
+  },
+  "result": {
+    "item": "candles:green_candle",
+    "count": 8
+  }
+}
