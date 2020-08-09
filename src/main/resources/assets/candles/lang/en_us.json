@@ -23,5 +23,9 @@
   "block.candles.cyan_candle": "Cyan Candle",
   "item.candles.cyan_candle": "Cyan Candle",
   "block.candles.purple_candle": "Purple Candle",
-  "item.candles.purple_candle": "Purple Candle"
+  "item.candles.purple_candle": "Purple Candle",
+  "block.candles.blue_candle": "Blue Candle",
+  "item.candles.blue_candle": "Blue Candle",
+  "block.candles.brown_candle": "Brown Candle",
+  "item.candles.brown_candle": "Brown Candle"
 }
