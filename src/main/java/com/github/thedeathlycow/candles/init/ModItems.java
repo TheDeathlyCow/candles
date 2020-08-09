@@ -22,6 +22,7 @@ public class ModItems {
     public static final Item GRAY_CANDLE = new BlockNamedItem(ModBlocks.GRAY_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.GRAY_CANDLE.getRegistryName());
     public static final Item LIGHT_GRAY_CANDLE = new BlockNamedItem(ModBlocks.LIGHT_GRAY_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.LIGHT_GRAY_CANDLE.getRegistryName());
     public static final Item CYAN_CANDLE = new BlockNamedItem(ModBlocks.CYAN_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.CYAN_CANDLE.getRegistryName());
+    public static final Item PURPLE_CANDLE = new BlockNamedItem(ModBlocks.PURPLE_CANDLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(ModBlocks.PURPLE_CANDLE.getRegistryName());
 
 
     public static final Item[] ITEMS = {
@@ -36,7 +37,8 @@ public class ModItems {
             PINK_CANDLE,
             GRAY_CANDLE,
             LIGHT_GRAY_CANDLE,
-            CYAN_CANDLE
+            CYAN_CANDLE,
+            PURPLE_CANDLE
     };
 
 
