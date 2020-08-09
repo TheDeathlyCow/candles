@@ -167,10 +167,10 @@ public class CandleBlock extends Block {
         }
     }
 
-    public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
-        BlockPos blockpos = pos.down();
-        return this.isValidGround(worldIn.getBlockState(blockpos), worldIn, blockpos);
-    }
+//    public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
+//        BlockPos blockpos = pos.down();
+//        return this.isValidGround(worldIn.getBlockState(blockpos), worldIn, blockpos);
+//    }
 
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
         return !state.getCollisionShape(worldIn, pos).project(Direction.UP).isEmpty();
